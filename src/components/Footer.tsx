@@ -9,6 +9,7 @@ import arrow from "../assets/Arrow 2.svg"
 const Footer = () => {
   return (
     <>
+    {/* pushing again */}
       <div className="bg-[#031728] md:mt-40">
         {/* Main Footer Section */}
         <div className="md:flex items-center hidden justify-center text-[#E1DFF3]  relative">
