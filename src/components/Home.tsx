@@ -22,20 +22,21 @@ function Home() {
             Instantly spend your crypto like cash whenever you want
           </p>
           {/* App Store Buttons */}
-          <div className="flex gap-4 mt-6 ">
-            <button className="flex items-center px-2 py-2 gap-2 bg-[#34EBE1] text-black rounded-md w-full h-full justify-center">
+          <div className="flex flex-row gap-4 mt-6">
+            <button className="flex items-center px-4 py-3 gap-2 bg-[#34EBE1] text-black rounded-md w-full sm:w-[200px] h-[60px] justify-center">
               <img src={playStoreIcon} alt="Google Play" className="h-6 w-6" />
-              <div>
-                {" "}
-                <p className="text-base font-medium">Get it on </p>
-                <p className="text-[22px] font-semibold">Google Play</p>
+              <div className="text-left">
+                <p className="text-sm font-medium leading-none">Get it on</p>
+                <p className="text-lg font-semibold leading-none">
+                  Google Play
+                </p>
               </div>
             </button>
-            <button className="flex items-center px-2 py-2 gap-2 bg-[#34EBE10D] text-white rounded-md w-full h-full justify-center">
+            <button className="flex items-center px-4 py-3 gap-2 bg-[#34EBE10D] text-white rounded-md w-full sm:w-[200px] h-[60px] justify-center">
               <img src={appleIcon} alt="App Store" className="h-6 w-6" />
-              <div>
-                <p className="text-base font-medium">Download on</p>
-                <p className="text-[22px] font-semibold">App Store</p>
+              <div className="text-left">
+                <p className="text-sm font-medium leading-none">Download on</p>
+                <p className="text-lg font-semibold leading-none">App Store</p>
               </div>
             </button>
           </div>
