@@ -26,8 +26,8 @@ function Home() {
             <button className="flex items-center px-4 py-3 gap-2 bg-[#34EBE1] text-black rounded-md w-full sm:w-[200px] h-[60px] justify-center">
               <img src={playStoreIcon} alt="Google Play" className="h-6 w-6" />
               <div className="text-left">
-                <p className="text-sm font-medium leading-none">Get it on</p>
-                <p className="text-lg font-semibold leading-none">
+                <p className="md:text-sm text-[10px] font-medium leading-none">Get it on</p>
+                <p className="md:text-lg text-base font-semibold leading-none">
                   Google Play
                 </p>
               </div>
@@ -35,8 +35,8 @@ function Home() {
             <button className="flex items-center px-4 py-3 gap-2 bg-[#34EBE10D] text-white rounded-md w-full sm:w-[200px] h-[60px] justify-center">
               <img src={appleIcon} alt="App Store" className="h-6 w-6" />
               <div className="text-left">
-                <p className="text-sm font-medium leading-none">Download on</p>
-                <p className="text-lg font-semibold leading-none">App Store</p>
+                <p className="md:text-sm text-[10px] font-medium leading-none">Download on</p>
+                <p className="md:text-lg text-base font-semibold leading-none">App Store</p>
               </div>
             </button>
           </div>
