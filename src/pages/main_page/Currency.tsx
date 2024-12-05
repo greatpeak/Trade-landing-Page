@@ -1,5 +1,5 @@
-import currencyImage from "../assets/currency.svg";
-import shieldCheck from "../assets/Shield-Check.svg";
+import currencyImage from "../../assets/currency.svg";
+import shieldCheck from "../../assets/Shield-Check.svg";
 
 const Currency = () => {
   return (

@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home";
-import Currency from "./components/Currency";
-import Coins from "./components/Coin";
-import Trade from "./components/Trade";
-import UserExp from "./components/UserExp";
+import Home from "./pages/main_page/Home";
+import Currency from "./pages/main_page/Currency";
+import Coins from "./pages/main_page/Coin";
+import Trade from "./pages/main_page/Trade";
+import UserExp from "./pages/main_page/UserExp";
 import Footer from "./components/Footer";
+import AboutHome from "./pages/aboutUs/AboutHome";
+import FeaturesSection from "./pages/aboutUs/FeaturesSection";
+import FAQSection from "./pages/aboutUs/FAQSection";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
-  // State to track the selected page, defaulting to "home"
-  const [selectedPage, setSelectedPage] = useState<string>("home");
+  const [selectedPage, setSelectedPage] = useState<string>("aboutus");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,11 +42,12 @@ function App() {
           <Trade />
           <UserExp />
         </>
-      ) : selectedPage === "aboutUs" ? (
-        <div id="aboutUs" className="md:pt-[120px] pt-[100px] text-white">
+      ) : selectedPage === "aboutus" ? (
+        <div className="md:pt-[120px] pt-[100px] text-white">
           {/* About Us content */}
-          <h1>About Us</h1>
-          <p>Welcome to our platform! We are dedicated to providing...</p>
+          <AboutHome />
+          <FeaturesSection />
+          <FAQSection />
         </div>
       ) : selectedPage === "support" ? (
         <div id="support" className="md:pt-[120px] pt-[100px] text-white">

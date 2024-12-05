@@ -1,15 +1,15 @@
-import appleIcon from "@/assets/appleIcon.svg";
-import playStoreIcon from "@/assets/playStoreIcon.svg";
-import phoneImage from "@/assets/phoneImage.svg";
-import fastIcon from "@/assets/fast.svg";
-import customerIcon from "@/assets/mdi_customer-service.svg";
-import rateIcon from "@/assets/rate.svg";
+import appleIcon from "../../assets/appleIcon.svg";
+import playStoreIcon from "../../assets/playStoreIcon.svg";
+import phoneImage from "../../assets/phoneImage.svg";
+import fastIcon from "../../assets/fast.svg";
+import customerIcon from "../../assets/mdi_customer-service.svg";
+import rateIcon from "../../assets/rate.svg";
 
 function Home() {
   return (
-    <div className="bg-[#000D1F] text-white font-[Figtree] mx-auto">
+    <div id="home" className="bg-[#000D1F] text-white font-[Figtree] mx-auto">
       {/* Hero Section */}
-      <section id="home">
+      <section>
         {/* Content */}
         <div className="text-center flex flex-col items-center justify-center min-h-screen gap-6 px-5">
           <h1 className="text-[28px] md:text-[64px] font-bold">
@@ -26,7 +26,9 @@ function Home() {
             <button className="flex items-center px-4 py-3 gap-2 bg-[#34EBE1] text-black rounded-md w-full sm:w-[200px] h-[60px] justify-center">
               <img src={playStoreIcon} alt="Google Play" className="h-6 w-6" />
               <div className="text-left">
-                <p className="md:text-sm text-[10px] font-medium leading-none">Get it on</p>
+                <p className="md:text-sm text-[10px] font-medium leading-none">
+                  Get it on
+                </p>
                 <p className="md:text-lg text-base font-semibold leading-none">
                   Google Play
                 </p>
@@ -35,8 +37,12 @@ function Home() {
             <button className="flex items-center px-4 py-3 gap-2 bg-[#34EBE10D] text-white rounded-md w-full sm:w-[200px] h-[60px] justify-center">
               <img src={appleIcon} alt="App Store" className="h-6 w-6" />
               <div className="text-left">
-                <p className="md:text-sm text-[10px] font-medium leading-none">Download on</p>
-                <p className="md:text-lg text-base font-semibold leading-none">App Store</p>
+                <p className="md:text-sm text-[10px] font-medium leading-none">
+                  Download on
+                </p>
+                <p className="md:text-lg text-base font-semibold leading-none">
+                  App Store
+                </p>
               </div>
             </button>
           </div>

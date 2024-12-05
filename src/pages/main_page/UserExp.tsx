@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import leftArrow from "../assets/left.svg";
-import rightArrow from "../assets/right.svg";
-import personImage1 from "../assets/person1.svg";
-import personImage2 from "../assets/person2.svg";
+import leftArrow from "../../assets/left.svg";
+import rightArrow from "../../assets/right.svg";
+import personImage1 from "../../assets/person1.svg";
+import personImage2 from "../../assets/person2.svg";
 
 interface User {
   name: string;
@@ -111,7 +111,10 @@ const UserExp: React.FC = () => {
 
   return (
     <>
-      <div className="px-4 lg:px-14 py-5 w-full flex pb-34 items-center justify-center">
+      <div
+        id="aboutus../"
+        className="px-4 lg:px-14 py-5 w-full flex pb-34 items-center justify-center"
+      >
         <div className="max-w-[1202px] text-center">
           <div className="text-[#E1DFF3]">
             <h4 className="font-bold text-[28px] md:text-[42px] max-w-[632px] mx-auto">
@@ -158,8 +161,6 @@ const UserExp: React.FC = () => {
               ))}
             </div>
 
-            
-
             <div className="md:w-1/5 md:self-end block">
               {" "}
               {/* Progress Indicator */}
@@ -177,10 +178,18 @@ const UserExp: React.FC = () => {
               {/* Pagination and Controls */}
               <div className="flex gap-2 items-center mt-4">
                 <button onClick={handlePrev} className="p-2 rounded-full">
-                  <img src={leftArrow} alt="Previous" className="max-h-[56px] max-w-[56px]"/>
+                  <img
+                    src={leftArrow}
+                    alt="Previous"
+                    className="max-h-[56px] max-w-[56px]"
+                  />
                 </button>
                 <button onClick={handleNext} className="p-2 rounded-full">
-                  <img src={rightArrow} alt="Next" className="max-h-[56px] max-w-[56px]"/>
+                  <img
+                    src={rightArrow}
+                    alt="Next"
+                    className="max-h-[56px] max-w-[56px]"
+                  />
                 </button>
               </div>
             </div>

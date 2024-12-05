@@ -1,10 +1,10 @@
-import coin1 from "../assets/Coin Logo.svg";
-import coin2 from "../assets/Coin Logo (1).svg";
-import coin3 from "../assets/Coin Logo (2).svg";
-import coin4 from "../assets/Coin Logo (3).svg";
-import coin5 from "../assets/Coin Logo (4).svg";
-import coin6 from "../assets/Coin Logo (5).svg";
-import coin7 from "../assets/Coin Logo (6).svg";
+import coin1 from "../../assets/Coin Logo.svg";
+import coin2 from "../../assets/Coin Logo (1).svg";
+import coin3 from "../../assets/Coin Logo (2).svg";
+import coin4 from "../../assets/Coin Logo (3).svg";
+import coin5 from "../../assets/Coin Logo (4).svg";
+import coin6 from "../../assets/Coin Logo (5).svg";
+import coin7 from "../../assets/Coin Logo (6).svg";
 const Coins = () => {
   return (
     <div className="px-4 lg:px-10 py-2 w-full bg-[#000D1F] flex flex-col items-center justify-center">

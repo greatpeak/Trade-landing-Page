@@ -1,4 +1,4 @@
-import earthImage from "../assets/Earth.svg";
+import earthImage from "../../assets/Earth.svg";
 
 const Trade = () => {
   return (
