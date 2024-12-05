@@ -7,7 +7,7 @@ export default function AboutHome() {
   return (
     <>
       {" "}
-      <div className="block md:flex">
+      <div className="block md:flex md:mb-0 mb-20">
         {" "}
         <div className="w-[365px] h-auto px-4 lg:px-14 md:w-auto">
           <h1 className="text-transparent text-[32px] bg-clip-text bg-gradient-to-r from-[#2DCCC4] to-[#4D36BC] font-light md:text-[64px] ">

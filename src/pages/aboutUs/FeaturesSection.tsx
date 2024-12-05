@@ -71,7 +71,7 @@ const FeaturesSection: React.FC = () => {
             <img
               src={feature.number}
               alt=""
-              className=" absolute left-[272px] h-auto"
+              className=" absolute md:left-[272px] left-[210px] overflow-hidden h-[265px] md:h-auto"
             />
           </div>
         ))}
@@ -83,7 +83,7 @@ const FeaturesSection: React.FC = () => {
           <h2 className="md:text-[42px] text-[20px] font-bold">
             What is Okrypt, <br /> What can I use it for?
           </h2>
-          <p className="md:mt-10 w-[558px] mx-auto font-light text-[20px]">
+          <p className="md:mt-10 w-[356px] md:w-[558px] mx-auto font-light text-[20px]">
             Lorem ipsum dolor sit amet consectetur. Senectus eu ac mi purus.
             Tincidunt cum.Lorem ipsum dolor sit amet consectetur. Senectus eu ac
             mi purus. Tincidunt cum. Lorem ipsum dolor sit amet consectetur.
