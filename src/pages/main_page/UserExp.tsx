@@ -175,7 +175,7 @@ const UserExp: React.FC = () => {
                   ></div>
                 </div>
               </div>
-              {/* Pagination and Controls */}
+              {/* Pagination and Controls div */}
               <div className="flex gap-2 items-center mt-4">
                 <button onClick={handlePrev} className="p-2 rounded-full">
                   <img
