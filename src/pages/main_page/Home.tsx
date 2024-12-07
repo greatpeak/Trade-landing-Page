@@ -4,10 +4,11 @@ import phoneImage from "../../assets/phoneImage.svg";
 import fastIcon from "../../assets/fast.svg";
 import customerIcon from "../../assets/mdi_customer-service.svg";
 import rateIcon from "../../assets/rate.svg";
+import image from "../../assets/OKRYPT.svg";
 
 function Home() {
   return (
-    <div id="home" className="bg-[#000D1F] text-white font-[Figtree] mx-auto">
+    <div id="home" className="text-white font-[Figtree] mx-auto">
       {/* Hero Section */}
       <section>
         {/* Content */}
@@ -48,7 +49,15 @@ function Home() {
           </div>
 
           {/* Phones */}
-          <div className="mt-12">
+          <div
+            className="mt-1"
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
             <img
               src={phoneImage}
               alt="Phones Display"

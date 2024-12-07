@@ -9,11 +9,13 @@ import Footer from "./components/Footer";
 import AboutHome from "./pages/aboutUs/AboutHome";
 import FeaturesSection from "./pages/aboutUs/FeaturesSection";
 import FAQSection from "./pages/aboutUs/FAQSection";
+import SupportScreen from "./pages/support/SupportScreen";
+import ContactUs from "./pages/support/ContactUs";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
-  const [selectedPage, setSelectedPage] = useState<string>("aboutus");
+  const [selectedPage, setSelectedPage] = useState<string>("support");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,10 +54,8 @@ function App() {
       ) : selectedPage === "support" ? (
         <div id="support" className="md:pt-[120px] pt-[100px] text-white">
           {/* Support content */}
-          <h1>Support</h1>
-          <p>
-            Need help? Our support team is here to assist you. Contact us at...
-          </p>
+          <SupportScreen/>
+          <ContactUs/>
         </div>
       ) : null}
 
