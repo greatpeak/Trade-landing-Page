@@ -3,7 +3,7 @@
 
 const SupportScreen = () => {
   return (
-    <div className="md:px-[100px] md:py-10  px-3">
+    <div className="md:px-[100px] md:py-10 py-6 px-5">
       <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
         <div className="w-[356px] md:w-full">
           <h1 className="text-[20px] md:text-[42px] font-bold">

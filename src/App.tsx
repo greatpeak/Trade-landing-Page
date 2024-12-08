@@ -15,7 +15,7 @@ import ContactUs from "./pages/support/ContactUs";
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
-  const [selectedPage, setSelectedPage] = useState<string>("support");
+  const [selectedPage, setSelectedPage] = useState<string>("aboutus");
 
   useEffect(() => {
     const handleScroll = () => {

@@ -107,7 +107,6 @@ const UserExp: React.FC = () => {
       ? users.slice(currentIndex, currentIndex + 2)
       : [users[currentIndex]];
 
-  const progressWidth = ((currentIndex + 1) / users.length) * 100;
 
   return (
     <>
@@ -161,37 +160,22 @@ const UserExp: React.FC = () => {
               ))}
             </div>
 
-            <div className="md:w-1/5 md:self-end block">
-              {" "}
-              {/* Progress Indicator */}
-              <div className="">
-                <p className="text-sm hidden md:block text-[#E1DFF3]">
-                  {currentIndex + 1} of {users.length} People
-                </p>
-                <div className="w-full bg-gray-700 h-1 rounded-full mt-2">
-                  <div
-                    style={{ width: `${progressWidth}%` }}
-                    className="bg-[#E1DFF3] h-1 rounded-full"
-                  ></div>
-                </div>
-              </div>
-              {/* Pagination and Controls div */}
-              <div className="flex gap-2 items-center mt-4">
-                <button onClick={handlePrev} className="p-2 rounded-full">
-                  <img
-                    src={leftArrow}
-                    alt="Previous"
-                    className="max-h-[56px] max-w-[56px]"
-                  />
-                </button>
-                <button onClick={handleNext} className="p-2 rounded-full">
-                  <img
-                    src={rightArrow}
-                    alt="Next"
-                    className="max-h-[56px] max-w-[56px]"
-                  />
-                </button>
-              </div>
+            {/* Pagination and Controls div */}
+            <div className="flex gap-2 items-center mt-4">
+              <button onClick={handlePrev} className="p-2 rounded-full">
+                <img
+                  src={leftArrow}
+                  alt="Previous"
+                  className="max-h-[56px] max-w-[56px]"
+                />
+              </button>
+              <button onClick={handleNext} className="p-2 rounded-full">
+                <img
+                  src={rightArrow}
+                  alt="Next"
+                  className="max-h-[56px] max-w-[56px]"
+                />
+              </button>
             </div>
           </div>
         </div>

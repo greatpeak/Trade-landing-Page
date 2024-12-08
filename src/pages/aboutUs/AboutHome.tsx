@@ -13,13 +13,13 @@ export default function AboutHome() {
           <h1 className="text-transparent text-[32px] bg-clip-text bg-gradient-to-r from-[#2DCCC4] to-[#4D36BC] font-light md:text-[64px] ">
             Explore the future <br /> of Crypto Trading
           </h1>
-          <p className="text-base md:text-[20px] font-light mt-4">
+          <p className="text-base md:text-[20px] min-w-[365px] md:min-w-[567px] font-light mt-4 mb-8">
             Lorem ipsum dolor sit amet consectetur. Senectus eu ac mi purus.
             Tincidunt cum.Lorem ipsum dolor sit amet consectetur. Senectus eu ac
             mi purus. Tincidunt cum. nectus eu ac mi purus.
           </p>
           <div className="flex flex-col mt-4 gap-[28px]">
-            <div className="flex gap-[72px]">
+            <div className="flex gap-2 md:gap-[72px]">
               <div className="bg-[#031728] px-3 py-[10px] md:p-[16px] rounded-lg flex flex-col gap-[10px] md:flex-row">
                 <img
                   src={CoinsIcon}
@@ -41,7 +41,7 @@ export default function AboutHome() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-[72px]">
+            <div className="flex gap-2 md:gap-[72px]">
               <div className="bg-[#031728] px-3 py-[10px] md:p-[16px] rounded-lg flex flex-col gap-[10px] md:flex-row">
                 <img
                   src={launchIcon}

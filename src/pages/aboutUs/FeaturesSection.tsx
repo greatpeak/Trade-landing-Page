@@ -51,67 +51,70 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <div className="text-[#E1DFF3] px-10 flex flex-col justify-center items-center">
+    <div className="text-[#E1DFF3] px-4 flex flex-col justify-center items-center">
       {/* Features Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div className="flex flex-col md:grid md:grid-cols-3 gap-8 text-center">
         {features.map((feature, index) => (
           <div
             key={index}
-            className=" relative justify-center bg-[#021628] p-6 rounded-lg md:w-[368px] h-[262px] w-[365px] shadow-md flex flex-col items-center"
+            className="relative justify-center bg-[#021628] p-6 rounded-lg w-full mb-7 max-w-[365px] md:w-[368px] h-auto shadow-md flex flex-col items-center mx-auto"
           >
-            <div className="absolute top-[-41px]">
+            <div className="absolute top-[-41px] left-1/2 transform -translate-x-1/2">
               <img
                 src={feature.icon}
                 alt=""
-                className="md:w-[82px] md:h-[82px] w-[68.33px] h-[68.33px] "
+                className="md:w-[82px] md:h-[82px] w-[68.33px] h-[68.33px]"
               />
             </div>
-            <h3 className="font-medium text-[20px]">{feature.title}</h3>
+            <h3 className="font-medium text-[20px] mt-10">{feature.title}</h3>
             <p className="text-sm mt-2">{feature.description}</p>
-            <img
+            {/* <img
               src={feature.number}
               alt=""
-              className=" absolute md:left-[272px] left-[210px] overflow-hidden h-[265px] md:h-auto"
-            />
+              className="absolute bottom-[-20px] right-0 md:right-[10px] h-full opacity-4 md:h-auto overflow-hidden"
+            /> */}
           </div>
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row gap-[96px] h-[1,121px]">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-[96px]">
         {/* Info Section */}
-        <div className="mt-16 ">
-          <h2 className="md:text-[42px] text-[20px] font-bold">
+        <div className="mt-8 md:mt-16 flex flex-col items-start text-left">
+          <h2 className="text-[24px] md:text-[42px] font-bold leading-snug">
             What is Okrypt, <br /> What can I use it for?
           </h2>
-          <p className="md:mt-10 w-[356px] md:w-[558px] mx-auto font-light text-[20px]">
+          <p className="mt-4 md:mt-10 w-full max-w-[356px] md:max-w-[558px] font-light text-[16px] md:text-[20px]">
             Lorem ipsum dolor sit amet consectetur. Senectus eu ac mi purus.
             Tincidunt cum.Lorem ipsum dolor sit amet consectetur. Senectus eu ac
             mi purus. Tincidunt cum. Lorem ipsum dolor sit amet consectetur.
             Lorem ipsum dolor sit amet consectetur. Senectus eu ac mi purus.
             Tincidunt cum.Lorem ipsum dolor sit amet consectetur. Senectus eu ac
-            mi purus.{" "}
+            mi purus.
           </p>
-          <button className="flex justify-center items-center gap-5 mt-6 px-6 py-2 bg-[#34EBE1] text-[#120D2D] text-[20px] font-bold rounded-3xl shadow-md">
-            <p>Let’s get Started</p> <img src={arrow} alt="" />
+          <button className="flex justify-center items-center gap-5 mt-6 px-4 md:px-6 py-2 bg-[#34EBE1] text-[#120D2D] text-[16px] md:text-[20px] font-bold rounded-3xl shadow-md">
+            <p>Let’s get Started</p>
+            <img src={arrow} alt="Arrow" />
           </button>
         </div>
 
         {/* Solving Section */}
-        <div className="mt-16 w-[469px]">
-          <h3 className="md:text-[28px] text-[20px] text-[#34EBE1] font-bold mb-8">
+        <div className="mt-8 md:mt-16 w-full md:w-auto">
+          <h3 className="text-[20px] md:text-[28px] text-[#34EBE1] font-bold mb-6 md:mb-8">
             What is it trying to solve
           </h3>
-          <div className="flex flex-col justify-center gap-8">
+          <div className="flex flex-col gap-6 md:gap-8">
             {solvingPoints.map((point, index) => (
               <div
                 key={index}
-                className="bg-[#021628] p-4 rounded-lg text-sm shadow-md max-w-sm"
+                className="bg-[#021628] p-4 rounded-lg shadow-md max-w-full md:max-w-sm mx-auto md:mx-0"
               >
-                <div className="flex items-center  gap-1">
-                  <img src={shield} alt="" />{" "}
-                  <h4 className="font-medium text-[20px]">{point.text}</h4>
+                <div className="flex items-center gap-2">
+                  <img src={shield} alt="Shield" />
+                  <h4 className="font-medium text-[16px] md:text-[20px]">
+                    {point.text}
+                  </h4>
                 </div>
-                <p className="mt-2 text-[16px] font-light">
+                <p className="mt-2 text-[14px] md:text-[16px] font-light">
                   Lorem ipsum dolor sit amet consectetur. Senectus eu ac mi
                   purus. Tincidunt cum.Lorem ipsum
                 </p>
