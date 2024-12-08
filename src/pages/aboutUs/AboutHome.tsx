@@ -7,9 +7,9 @@ export default function AboutHome() {
   return (
     <>
       {" "}
-      <div className="block md:flex md:mb-0 mb-20">
+      <div className="block md:flex px-4  md:mb-0 mb-20">
         {" "}
-        <div className="w-[365px] h-auto px-4 lg:px-14 md:w-auto">
+        <div className="w-[365px] h-auto lg:px-14 md:w-auto">
           <h1 className="text-transparent text-[32px] bg-clip-text bg-gradient-to-r from-[#2DCCC4] to-[#4D36BC] font-light md:text-[64px] ">
             Explore the future <br /> of Crypto Trading
           </h1>
@@ -65,7 +65,11 @@ export default function AboutHome() {
             </div>
           </div>
         </div>
-        <img src={handIcon} alt="" className="hidden md:block w-[1053px] h-[743px] mt-[-48px] overflow-hiddenb" />
+        <img
+          src={handIcon}
+          alt=""
+          className="hidden md:block w-[1053px] h-[743px] mt-[-48px] overflow-hiddenb"
+        />
       </div>
     </>
   );

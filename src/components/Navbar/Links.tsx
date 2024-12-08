@@ -17,7 +17,7 @@ export default function Links({
     <AnchorLink
       className={`${
         selectedPage === lowerCasePage
-          ? "text-[#34EBE1]border-[#34EBE1]" 
+          ? "text-[#34EBE1] border-[#34EBE1]" 
           : "text-white"
       } transition duration-500 hover:text-[#34EBE1] text-xl font-medium`}
       href={`#${lowerCasePage}`}

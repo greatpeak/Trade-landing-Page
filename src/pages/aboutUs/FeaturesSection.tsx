@@ -57,7 +57,7 @@ const FeaturesSection: React.FC = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="relative justify-center bg-[#021628] p-6 rounded-lg w-full mb-7 max-w-[365px] md:w-[368px] h-auto shadow-md flex flex-col items-center mx-auto"
+            className="relative justify-center bg-[#021628] p-4 rounded-lg mb-7 w-[365px] md:w-[368px] h-[262px] shadow-md flex flex-col items-center mx-auto"
           >
             <div className="absolute top-[-41px] left-1/2 transform -translate-x-1/2">
               <img
