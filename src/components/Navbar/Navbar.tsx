@@ -50,9 +50,9 @@ export default function Navbar() {
           />
         )}
         <div className="hidden md:block">
-          <p className="rounded-lg font-semibold text-xl bg-[#34EBE1] px-3 py-[10px]">
+          <button className="rounded-lg font-semibold text-xl bg-[#34EBE1] px-3 py-[10px]">
             Contact Us
-          </p>
+          </button>
         </div>
 
         {!isAboveMediumScreens && isMenuToggled && (

@@ -7,11 +7,9 @@ const Trade = () => {
         <div className=" max-w-[629px] z-10">
           <div className="text-[#E1DFF3]">
             <h4 className="font-bold md:text-4xl text-[28px] max-w-[629px]">
-              Trade Globally, Succeed Locally.
+              <span className="text-[#34EBE1]">Large volumes?</span> We got you
+              covered.{" "}
             </h4>
-            <h3 className="font-semibold text-[20px] md:text-2xl text-[#34EBE1] text-secondaryColor mt-4 max-w-[509px]">
-              Join Our Widely Used Trading Platform.
-            </h3>
 
             <p className="max-w-[551px] font-light text-base md:text-xl mt-6">
               Trust us to handle large volumes with ease—our platform is built
