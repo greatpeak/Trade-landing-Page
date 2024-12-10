@@ -24,13 +24,16 @@ export default function Navbar({
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const pages = ["Home", "Buy Crypto", "Sell Crypto", "About Us", "Support"];
 
+          console.log(selectedPage);
+
+
   return (
     <nav>
       <div
         className={`${flexBetween} ${navbarStyle} py-4 md:px-10 px-5 h-[68px] md:max-h-[100px] fixed top-0 z-30 bg-[#000D1F] w-full`}
       >
         <div className="flex gap-2 w-2/6 h-[28px] items-center md:h-[48px]">
-          <img src={Logo} alt="Okrypt Logo" className=" w-[47.4px]" />
+          <img src={Logo} alt="Okrypt Logo" className="w-[47.4px]" />
           <p className="font-[Figtree] font-bold text-xl md:text-[28px] text-white">
             Okrypt
           </p>
@@ -69,7 +72,6 @@ export default function Navbar({
       {!isAboveMediumScreens && isMenuToggled && (
         <div className="fixed right-0 top-0 z-40 h-[500px] text-white rounded-xl w-[226px] drop-shadow-xl bg-[#000D1F]">
           <div className="flex flex-col p-5 gap-[56px] items-end">
-            {" "}
             <img
               src={closedIcon}
               className="h-[37.38px] cursor-pointer"

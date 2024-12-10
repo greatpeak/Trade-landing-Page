@@ -14,8 +14,7 @@ import ContactUs from "./pages/support/ContactUs";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
-
-  const [selectedPage, setSelectedPage] = useState<string>("aboutus");
+  const [selectedPage, setSelectedPage] = useState<string>("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,16 +45,14 @@ function App() {
         </>
       ) : selectedPage === "aboutus" ? (
         <div className="md:pt-[120px] pt-[100px] text-white">
-          {/* About Us content */}
           <AboutHome />
           <FeaturesSection />
           <FAQSection />
         </div>
       ) : selectedPage === "support" ? (
         <div id="support" className="md:pt-[120px] pt-[100px] text-white">
-          {/* Support content */}
-          <SupportScreen/>
-          <ContactUs/>
+          <SupportScreen />
+          <ContactUs />
         </div>
       ) : null}
 
