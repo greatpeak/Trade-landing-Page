@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Section */}
-        <div className="px-4 lg:px-14 py-8 w-full text-[#E1DFF3]">
+        <div className="px-4 lg:px-14 pb-8 w-full text-[#E1DFF3]">
           <div className="max-w-[1259.56px] md:border-t-[0.1px] mx-auto ">
             <h6 className="font-semibold text-xl md:text-xl text-center lg:text-left mb-5 mt-4">
               &copy; Okryptcrypto. All rights reserved.

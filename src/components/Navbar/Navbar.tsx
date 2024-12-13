@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Logo from "@/assets/okrypt sketch 2.svg";
 import mobileButton from "@/assets/Frame 3473045.svg";
 import closedIcon from "@/assets/closeIcon.svg";
@@ -8,6 +8,12 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 export default function Navbar() {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location]);
+
   const pages = [
     { name: "Home", path: "/" },
     { name: "Buy Crypto", path: "" },
