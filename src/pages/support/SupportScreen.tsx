@@ -1,10 +1,22 @@
-// import supportImg from "../../assets/supportImg.svg";
-// import supportBg from "../../assets/supportBg.svg";
+import supportBg from "../../assets/bgContact.svg";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const SupportScreen = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
+
+  const backgroundImage = isSmallScreen ? "" : `url(${supportBg})`;
+
   return (
-    <div className="md:px-[100px] md:py-10 py-6 px-5">
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
+    <div
+      className="md:px-[100px] md:pt-0 pt-24 md:pb-10 py-6 px-5"
+      style={{
+        backgroundImage: backgroundImage,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "665px", 
+      }}
+    >
+      <div className="flex flex-col md:pt-[100px] md:flex-row gap-5 justify-between items-center">
         <div className="w-[356px] md:w-full">
           <h1 className="text-[20px] md:text-[42px] font-bold">
             WANT TO SUPPORT <br className="hidden md:block" /> OKRYPT, LOREM
@@ -15,7 +27,7 @@ const SupportScreen = () => {
             Contact us to support Okrypt
           </p>
         </div>
-        <div className="text-white bg-[#011528] rounded-2xl w-[355px] md:w-[575px] px-5 py-5 flex flex-col justify-center gap-6">
+        <div className="text-white bg-[#011528] md:bg-[#01152869] md:backdrop-blur-sm rounded-2xl w-[355px] md:w-[575px] px-5 py-5 flex flex-col justify-center gap-6">
           <form className="flex flex-col gap-4">
             <label
               htmlFor="Email Address"

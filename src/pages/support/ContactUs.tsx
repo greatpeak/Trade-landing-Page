@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import leftArrow from "../../assets/left.svg";
 import rightArrow from "../../assets/right.svg";
+import contactBg from "../../assets/contactBG.svg"
 
 interface Card {
   id: number;
@@ -42,7 +43,7 @@ const ContactUs: React.FC = () => {
   // Handle responsive itemsPerPage
   useEffect(() => {
     const handleResize = () => {
-      setItemsPerPage(window.innerWidth < 768 ? 1 : 2); // 1 card for mobile, 2 cards for larger screens
+      setItemsPerPage(window.innerWidth < 768 ? 1 : 2); 
     };
 
     handleResize(); 
@@ -70,7 +71,14 @@ const ContactUs: React.FC = () => {
   );
 
   return (
-    <div className="md:px-[100px] bg-[#011528] h-auto md:py-20 pt-6 pb-20 px-4">
+    <div
+      className="md:px-[100px] bg-[#011528] h-auto md:py-20 pt-6 pb-20 mb-32 md:mb-0 px-4"
+      style={{
+        backgroundImage: `url(${contactBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="flex flex-col md:flex-row md:gap-20  justify-between items-center">
         {/* Left Section */}
         <div className="w-[356px] md:min-w-[502px] mb-5">

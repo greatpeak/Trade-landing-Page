@@ -3,13 +3,15 @@ import userIcon from "../../assets/User.svg";
 import CoinsIcon from "../../assets/coins.svg";
 import launchIcon from "../../assets/heroicons_rocket-launch-20-solid.svg";
 import handIcon from "../../assets/hand.svg";
+// import linearGradient from "../../assets/Ellipse 1348.svg";
 export default function AboutHome() {
   return (
     <>
       {" "}
       <div className="block md:flex px-4  md:mb-0 mb-20">
         {" "}
-        <div className="w-[365px] h-auto lg:px-14 md:w-auto">
+        <div className="w-[365px] h-auto lg:px-14 md:w-auto ">
+          {" "}
           <h1 className="text-transparent text-[32px] bg-clip-text bg-gradient-to-r from-[#2DCCC4] to-[#4D36BC] font-light md:text-[64px] ">
             Explore the future <br /> of Crypto Trading
           </h1>
