@@ -1,0 +1,13 @@
+#backgroundText {
+  background: url("../../../assets/OKRYPT.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#linearGradient {
+  background: url("../../../assets/linearGradient.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
