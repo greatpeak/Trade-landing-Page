@@ -41,7 +41,11 @@ export default function Navbar() {
               <Link
                 key={name}
                 to={path}
-                className="text-white transition duration-500 hover:text-[#34EBE1] text-xl font-medium"
+                className={`text-xl font-medium transition duration-500 ${
+                  location.pathname === path
+                    ? "text-[#34EBE1]"
+                    : "text-white hover:text-[#34EBE1]"
+                }`}
               >
                 {name}
               </Link>
