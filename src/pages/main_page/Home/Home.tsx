@@ -1,11 +1,12 @@
 import appleIcon from "../../../assets/appleIcon.svg";
 import playStoreIcon from "../../../assets/playStoreIcon.svg";
-import phoneImage from "../../../assets/phoneImage.svg";
+import phoneImage from "../../../assets/homepageImg.svg";
+import phoneImageMobile from "../../../assets/phoneImgMobile.svg";
 import fastIcon from "../../../assets/fast.svg";
 import customerIcon from "../../../assets/mdi_customer-service.svg";
 import rateIcon from "../../../assets/rate.svg";
 import image from "../../../assets/OKRYPT.svg";
-import image1 from "../../../assets/linearGradient.svg"
+import image1 from "../../../assets/linearGradient.svg";
 function Home() {
   return (
     <div id="home" className="text-white font-[Figtree] mx-auto">
@@ -52,9 +53,9 @@ function Home() {
             id="backgroundText linearGradient"
             style={{ backgroundImage: `url(${image1})` }}
           >
-            {/* Phones */}
+            {/* Phones  Desktop*/}
             <div
-              className="mt-1"
+              className="mt-1 hidden md:block"
               style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
@@ -65,7 +66,24 @@ function Home() {
               <img
                 src={phoneImage}
                 alt="Phones Display"
-                className="md:w-[746px] md:h-[640px] h-[214px] w-[211px] max-w-md mx-auto"
+                className="md:mt-[-400px]"
+              />
+            </div>
+
+            {/* Phones  Mobile*/}
+            <div
+              className="mt-1 md:hidden block"
+              style={{
+                backgroundImage: `url(${image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <img
+                src={phoneImageMobile}
+                alt="Phones Display"
+                className="mt-[-50px] w-auto"
               />
             </div>
           </div>

@@ -7,7 +7,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 
 export default function Navbar() {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 786px)");
   const location = useLocation();
 
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function Navbar() {
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           />
         )}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <button className="rounded-lg font-semibold text-xl bg-[#34EBE1] px-3 py-[10px]">
             Contact Us
           </button>
