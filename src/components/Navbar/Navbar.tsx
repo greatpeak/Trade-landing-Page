@@ -14,10 +14,15 @@ export default function Navbar() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location]);
 
+  const scrollDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  };
+
   const pages = [
     { name: "Home", path: "/" },
-    { name: "Buy Crypto", path: "" },
-    { name: "Sell Crypto", path: "" },
+    { name: "Buy Crypto", path: "#" },
+    { name: "Sell Crypto", path: "#" },
     { name: "About Us", path: "/about-us" },
     { name: "Support", path: "/support" },
   ];
@@ -26,7 +31,6 @@ export default function Navbar() {
     <nav>
       <div className="flex justify-between items-center py-4 md:px-10 px-5 h-[68px] md:max-h-[100px] fixed top-0 z-30 bg-[#000D1F] w-full">
         <div>
-          {" "}
           <div className="flex gap-2 w-2/6 h-[28px] items-center md:h-[48px]">
             <img src={Logo} alt="Okrypt Logo" className="w-[47.4px]" />
             <p className="font-[Figtree] font-bold text-xl md:text-[28px] text-white">
@@ -46,6 +50,11 @@ export default function Navbar() {
                     ? "text-[#34EBE1]"
                     : "text-white hover:text-[#34EBE1]"
                 }`}
+                onClick={
+                  name === "Buy Crypto" || name === "Sell Crypto"
+                    ? scrollDown
+                    : undefined
+                }
               >
                 {name}
               </Link>
@@ -59,6 +68,7 @@ export default function Navbar() {
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           />
         )}
+
         <div className="hidden lg:block">
           <button className="rounded-lg font-semibold text-xl bg-[#34EBE1] px-3 py-[10px]">
             Contact Us
@@ -79,7 +89,11 @@ export default function Navbar() {
                   key={name}
                   to={path}
                   className="text-white transition duration-500 hover:text-[#34EBE1] text-xl font-medium"
-                  onClick={() => setIsMenuToggled(false)}
+                  onClick={(e) => {
+                    setIsMenuToggled(false);
+                    if (name === "Buy Crypto" || name === "Sell Crypto")
+                      scrollDown(e);
+                  }}
                 >
                   {name}
                 </Link>
